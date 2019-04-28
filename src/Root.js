@@ -9,7 +9,7 @@ export default ({children, initialState = {} }) => {
     const store = createStore(reducers, initialState, applyMiddleware(thunk))
 
         return (
-            <Provider store>
+            <Provider store={store}>
                 {children}
             </Provider>
         )
