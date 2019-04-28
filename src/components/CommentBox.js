@@ -8,11 +8,11 @@ class CommentBox extends React.Component {
         comment: ""
     }
 
-    handleChange = (event) => {
+    handleChange = event => {
         this.setState({ comment: event.target.value })
     }
 
-    handleSubmit = (event) => {
+    handleSubmit = event => {
         event.preventDefault()
 
         this.props.postComment(this.state.comment)
