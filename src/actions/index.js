@@ -17,3 +17,11 @@ export const fetchComments = () => async dispatch => {
         payload: response.data
     })
 }
+
+export const CHANGE_AUTH = "change_auth"
+export const changeAuth = isLoggedIn => {
+    return {
+        type: CHANGE_AUTH,
+        payload: isLoggedIn
+    }
+}
